@@ -8,9 +8,9 @@ import spacy
 
 nlp			= spacy.load('en_core_web_lg')
 
-categories	= nlp(u'wood electrical metal')
-sent 		= input("Product description : ")
-sent 		= nlp(sent)
+categories	= nlp(u'wood automobile metal')
+sent 		= raw_input("Product description : ")
+sent 		= nlp(unicode(sent, "utf-8"))
 
 max 	= 0
 ans		= ""
